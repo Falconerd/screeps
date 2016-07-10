@@ -1,6 +1,7 @@
 "use strict";
 var Creep = (function () {
-    function Creep() {
+    function Creep(creep) {
+        this.creep = creep;
     }
     return Creep;
 }());

@@ -1,3 +1,5 @@
+import {Creep} from "./creep";
+
 export class Spawn {
   spawn: any;
 
@@ -6,6 +8,6 @@ export class Spawn {
   }
 
   createCreep() {
-    const creep = this.spawn.createCreep([WORK, WORK, MOVE]);
+    const creep = new Creep(this.spawn.createCreep([WORK, WORK, MOVE, CARRY]));
   }
 }
