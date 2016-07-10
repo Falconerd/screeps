@@ -1,5 +1,6 @@
 "use strict";
-var spawn1 = Game.spawns.Spawn1;
+var spawn_1 = require("./spawn");
+var spawn1 = new spawn_1.Spawn(Game.spawns.Spawn1);
 exports.loop = function () {
-    console.log(spawn1);
+    spawn1.createCreep();
 };

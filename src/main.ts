@@ -1,7 +1,7 @@
 import {Spawn} from "./spawn";
 
-const spawn1 = Game.spawns.Spawn1;
+const spawn1 = new Spawn(Game.spawns.Spawn1);
 
 export const loop = () => {
-  console.log(spawn1);
+  spawn1.createCreep();
 };
