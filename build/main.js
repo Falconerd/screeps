@@ -1,4 +1,5 @@
 "use strict";
+var spawn1 = Game.spawns.Spawn1;
 exports.loop = function () {
-    console.log("Tick!");
+    console.log(spawn1);
 };
